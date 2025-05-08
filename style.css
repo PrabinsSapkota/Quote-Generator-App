@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(225, 254, 253);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+  }
+  .dark-mode {
+    background-color: #121212;
+    color: #f0f0f0;
+  }
+  
+
+  #main-container {
+    width: 80%;
+    max-width: 600px;
+    background-color: white;
+    padding: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  .dark-mode #main-container {
+    background-color: #1f1f1f;
+  }
+  
+ 
+  .modes {
+    display: flex;
+    justify-content: flex-end;
+    padding-right: 10px;
+  }
+  
+  .material-symbols-outlined {
+    font-size: 28px;
+    color: #333;
+    margin-right: 8px;
+    vertical-align: middle;
+    transition: color 0.3s ease, transform 0.3s ease;
+    cursor: pointer;
+    user-select: none;
+  }
+  
+  .material-symbols-outlined:hover {
+    color: #007bff;
+    transform: scale(1.1);
+  }
+  
+  .dark-mode .material-symbols-outlined {
+    color: #f0f0f0;
+  }
+  
+  .dark-mode .material-symbols-outlined:hover {
+    color: #66ccff;
+  }
+
+  #quote-app {
+    margin-top: 20px;
+  }
+  
+  #categorySelect,
+  #animeSelect {
+    padding: 10px;
+    font-size: 16px;
+    margin-top: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+
+  #quoteContainer {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  #quoteContainer p {
+    background-color: #f1f1f1;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    text-align: left;
+    font-style: italic;
+    transition: background-color 0.3s;
+  }
+  
+  #quoteContainer p:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .dark-mode #quoteContainer p {
+    background-color: #2a2a2a;
+    color: #f0f0f0;
+  }
+  
+  .dark-mode #quoteContainer p:hover {
+    background-color: #3a3a3a;
+  }
+  
+
+  button {
+    padding: 10px 40px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+    width: 100%;
+  }
+  
+  button:hover {
+    background-color: #218838;
+  }
+  
+  .dark-mode button {
+    background-color: #3a7c3f;
+    color: white;
+  }
+  
+  .dark-mode button:hover {
+    background-color: #2e5c31;
+  }
+  
+
+  #button-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+  }
+  
+  #button-container button {
+    flex: 1;
+    padding: 10px;
+    font-size: 16px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  #button-container button:hover {
+    background-color: #218838;
+  }
+  
+  .dark-mode #button-container button {
+    background-color: #3a7c3f;
+  }
+  
+  .dark-mode #button-container button:hover {
+    background-color: #2e5c31;
+  }
+  
+ 
+  @media screen and (max-width: 600px) {
+    #button-container {
+      flex-direction: column;
+      gap: 15px;
+    }
+  
+    #button-container button {
+      width: 100%;
+      padding: 12px;
+      font-size: 14px;
+    }
+  }
+  
+  
+  #prevBtn,
+  #nextBtn {
+    display: none;
+  }
+  
+
+  #fontControls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+  }
+  
+  #fontControls button {
+    width: 28px;
+    height: 28px;
+    font-size: 16px;
+    background-color: #e0e0e0;
+    color: #333;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    line-height: 1;
+  }
+  
+  #fontControls button:hover {
+    background-color: #d4d4d4;
+  }
+  

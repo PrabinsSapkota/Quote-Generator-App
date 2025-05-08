@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quote Generator</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+  <style>
+    .material-symbols-outlined {
+      font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 40;
+      font-size: 28px;
+      cursor: pointer;
+      user-select: none;
+    }
+
+    .modes {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+  </style>
+</head>
+
+<body class="dark-mode">
+
+  <div id="main-container">
+
+    <div class="modes">
+      <span class="material-symbols-outlined" onclick="changingModes()" id="changingModes">
+        light_mode
+      </span>
+    </div>
+
+    <div id="quote-app">
+
+      <h1>Quote Generator</h1>
+
+      <label for="categorySelect">Select Category:</label>
+      <select id="categorySelect">
+        <option value="all">All Categories</option>
+        <option value="catFacts">Cat Facts</option>
+        <option value="motivational">Motivational</option>
+        <option value="numberFacts">Facts About Some Number</option>
+
+      </select>
+      <div id="quoteContainer"></div>
+      <div id="fontControls" style="display: none;">
+        <button id="decreaseBtn" onclick="decreaseFontSize()">−</button>
+        <button id="increaseBtn" onclick="increaseFontSize()">+</button>
+      </div>
+      <!-- Buttons used in user interface -->
+      <div id="button-container">
+        <button id="prevBtn" onclick="showPreviousQuote()" disabled style="display:none;">Previous</button>
+        <button id="searchBtn" onclick="searchQuotes()">Random Quote</button>
+        <button id="nextBtn" onclick="showNextQuote()" disabled style="display:none;">Next</button>
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
